@@ -1,0 +1,40 @@
+# Create a new product
+POST http://localhost:9999/api/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Product 2",
+    "brand": "Brand 2",
+    "description": "Description 2",
+    "price": "10.00"
+}
+
+###
+
+# Get all products
+GET http://localhost:9999/api/products HTTP/1.1
+
+###
+
+# Get product by id
+GET http://localhost:9999/api/products/620fdc60d7f93e87efb497cf HTTP/1.1
+
+###
+
+# Update product by id
+PUT http://localhost:9999/api/products/620fdc60d7f93e87efb497cf HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Product 2",
+    "brand": "Brand 2",
+    "description": "Description 2",
+    "price": "20.00"
+}
+
+###
+
+# Delete product by id
+DELETE http://localhost:9999/api/products/620fde36ea7992fdd260f365 HTTP/1.1
+
+###
